@@ -46,11 +46,8 @@ const App = () => {
   )
 
   return (
-    <div className="App">
-      <h1>Table Dynamic Columns with react table demo </h1>
-      <div className="container">
-        <TableBuilder columns={columns} data={data} />
-      </div>
+    <div className="container">
+      <TableBuilder columns={columns} data={data} />
     </div>
   )
 }
