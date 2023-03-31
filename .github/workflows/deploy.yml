@@ -21,7 +21,9 @@ jobs:
         run: |
           git config --global user.email "jcvaldes.ingenieria@gmail.com"
           git config --global user.name "Juan Carlos Valdés"
+      - name: create bundles
+        run: npm run build
       - name: deploy the app
-        run: npm run build && npm run deploy
+        run: npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
